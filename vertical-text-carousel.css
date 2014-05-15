@@ -6,6 +6,9 @@
 .text-carousel .text-carousel-item {
   opacity: 0;
   -webkit-animation-duration: .4s;
+  -moz-animation-duration: .4s;
+  -ie-animation-duration: .4s;
+  animation-duration: .4s;
   position: absolute;
 }
 
@@ -15,13 +18,27 @@
 
 .text-carousel .text-carousel-item.in {
   -webkit-animation-name: carousel-in;
+  -moz-animation-name: carousel-in;
+  -ie-animation-name: carousel-in;
+  animation-name: carousel-in;
+
   -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ie-transform: translate(0, 0);
+  transform: translate(0, 0);
   opacity: 1;
 }
 
 .text-carousel .text-carousel-item.out {
   -webkit-animation-name: carousel-out;
+  -moz-animation-name: carousel-out;
+  -ie-animation-name: carousel-out;
+  animation-name: carousel-out;
+  
   -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ie-transform: translate(0, -100%);
+  transform: translate(0, -100%);
   opacity: 0;
 }
 
@@ -29,11 +46,17 @@
 @-webkit-keyframes carousel-in {
   0% {
     -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ie-transform: translate(0, 100%);
+    transform: translate(0, 100%);
     opacity: 0;
   }
 
   100% {
     -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ie-transform: translate(0, 0);
+    transform: translate(0, 0);
     opacity: 1;
   }
 }
@@ -41,11 +64,17 @@
 @-webkit-keyframes carousel-out {
   0% {
     -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ie-transform: translate(0, 0);
+    transform: translate(0, 0);
     opacity: 1;
   }
 
   100% {
     -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ie-transform: translate(0, -100%);
+    transform: translate(0, -100%);
     opacity: 0;
   }
 }
