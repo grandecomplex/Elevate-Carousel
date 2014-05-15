@@ -1,0 +1,51 @@
+.text-carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.text-carousel .text-carousel-item {
+  opacity: 0;
+  -webkit-animation-duration: .4s;
+  position: absolute;
+}
+
+.text-carousel .text-carousel-item:first-child {
+  opacity: 1;
+}
+
+.text-carousel .text-carousel-item.in {
+  -webkit-animation-name: carousel-in;
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+}
+
+.text-carousel .text-carousel-item.out {
+  -webkit-animation-name: carousel-out;
+  -webkit-transform: translate(0, -100%);
+  opacity: 0;
+}
+
+
+@-webkit-keyframes carousel-in {
+  0% {
+    -webkit-transform: translate(0, 100%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes carousel-out {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate(0, -100%);
+    opacity: 0;
+  }
+}
