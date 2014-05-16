@@ -14,5 +14,5 @@ An automatic vertical carousel that goes forever. Perfect for headlines.
     </script>
 
 Argument Options:
-3000 is the amount of time per transition in milliseconds. <i>Optional</i>
+3000 is the amount of time per transition in milliseconds. <i>Optional</i><br>
 Default is 2000 per transition.
