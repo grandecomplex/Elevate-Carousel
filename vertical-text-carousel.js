@@ -7,10 +7,19 @@
 
       function start() {
         var $parent = $(this);
-        var $items = $parent.find(".text-carousel-item");
+        var $items = $parent.find(".vertical-text-carousel-item");
         var lengthOfItems = $items.length;
+        var height = 0;
 
-        $parent.height( $items.first().height() );
+        $items.each(function() {
+          var itemHeight = $(this).height();
+          if (itemHeight > height) {
+            height = itemHeight; 
+          }
+        });
+
+
+        $parent.height( height );
 
         if ( lengthOfItems < 2) {
           return;

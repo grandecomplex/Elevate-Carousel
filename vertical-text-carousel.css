@@ -1,9 +1,9 @@
-.text-carousel {
+.vertical-text-carousel-item {
   overflow: hidden;
   position: relative;
 }
 
-.text-carousel .text-carousel-item {
+.vertical-text-carousel-item .vertical-text-carousel-item {
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-animation-duration: .4s;
@@ -13,12 +13,12 @@
   position: absolute;
 }
 
-.text-carousel .text-carousel-item:first-child {
+.vertical-text-carousel-item .vertical-text-carousel-item:first-child {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-.text-carousel .text-carousel-item.in {
+.vertical-text-carousel-item .vertical-text-carousel-item.in {
   -webkit-animation-name: carousel-in;
   -moz-animation-name: carousel-in;
   -ie-animation-name: carousel-in;
@@ -32,7 +32,7 @@
   filter: alpha(opacity=100);
 }
 
-.text-carousel .text-carousel-item.out {
+.vertical-text-carousel-item .vertical-text-carousel-item.out {
   -webkit-animation-name: carousel-out;
   -moz-animation-name: carousel-out;
   -ie-animation-name: carousel-out;
