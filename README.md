@@ -15,4 +15,6 @@ An automatic vertical carousel that goes forever. Perfect for headlines.
 
 Argument Options:
 3000 is the amount of time per transition in milliseconds. <i>Optional</i><br>
-Default is 2000 per transition.
+Default is 2000 per transition.<br>
+<br>
+Supports IE8, IE9, IE10, IE11, Firefox, Safari, and Chrome.
