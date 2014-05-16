@@ -1,14 +1,18 @@
-Vertical-text-carousel
+Elevate Carousel
 ======================
 
-To automatically slide through different animating headlines
+An automatic vertical carousel that goes forever. Perfect for headlines.
     
-    <div class="vertical-text-carousel">
-      <div class="vertical-text-carousel-item"><h2>This is an amazing idea</h2></div>
-      <div class="vertical-text-carousel-item"><h2>Another great insight</h2></div>
-      <div class="vertical-text-carousel-item"><h2>Genius!</h2></div>
+    <div class="elevate-carousel">
+      <div class="elevate-carousel-item"><h2>This is an amazing idea</h2></div>
+      <div class="elevate-carousel-item"><h2>Another great insight</h2></div>
+      <div class="elevate-carousel-item"><h2>Genius!</h2></div>
     </div>
 
     <script type="text/javascript">
-      $(".vertical-text-carousel").textCarousel(3000);
+      $(".elevate-carousel").textCarousel(3000);
     </script>
+
+Argument Options:
+3000 is the amount of time per transition in milliseconds. <i>Optional</i>
+Default is 2000 per transition.
