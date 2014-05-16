@@ -7,9 +7,10 @@
 
       function start() {
         var $parent = $(this);
-        var $items = $parent.find(".vertical-text-carousel-item");
+        var $items = $parent.find(".elevate-carousel-item");
         var lengthOfItems = $items.length;
         var height = 0;
+
 
         $items.each(function() {
           var itemHeight = $(this).height();
